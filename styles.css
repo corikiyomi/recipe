@@ -1,0 +1,114 @@
+/* GLOBALS */
+
+/* FONT-FACE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* PAGE COLORS */
+:root {
+    --blk: #0D0D0D;
+    --lightgray: #F2F2F2;
+    --aqua: #7ABFBF;
+    --lightaqua: rgba(122, 191, 191, .5);
+    --orange: #EB5428;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background-color: var(--aqua);
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--lightgray);
+    margin: 0 auto;
+    padding-top: 0;
+    width: 414px;
+}
+
+h1, h2, h3, footer {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: 95px;
+}
+
+.page-nav {
+    background-color: var(--lightgray);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: 'Bebas Neue';
+    color: var(--orange);
+    position: relative;
+    top: 95px;
+}
+
+.page-nav li {
+    text-align: center;
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+li:first-child {
+    grid-column: 2 / 3;
+}
+
+li:nth-child(2) {
+    grid-column: 4 / 5;
+}
+
+li:nth-child(3) {
+    grid-column: 6 / 7;
+}
+
+li:nth-child(4) {
+    grid-column: 7 / 11;
+}
+
+svg:first-child {
+    position: relative;
+    bottom: 65px;
+}
+
+.overview > img {
+    width: 100%;
+}
+
+/* MAIN */
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
