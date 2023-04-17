@@ -207,14 +207,15 @@ aside h3, aside figcaption {
 /* NAVIGATION */
 
 nav.main-nav {
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 0;
+    background-color: var(--lightgray);
 }
 
-nav.main-nav ul {
+nav.main-nav menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,20 +231,27 @@ nav.main-nav li {
     text-align: center;
 }
 
-div.pop-out-menu {
+menu.pop-out-menu {
     position: absolute;
     top: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    display: block;
+    /* visibility: collapse; */
 }
 
-div.pop-out-menu {
+menu.pop-out-menu li {
+    width: 150px;
+    justify-content: center;
+    display: block;
+}
+
+menu.pop-out-menu li a {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
-div.pop-out-menu img {
+menu.pop-out-menu img {
     width: 35px;
 }
 
