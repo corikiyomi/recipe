@@ -363,3 +363,19 @@ footer img {
     position: relative;
     bottom: 60px;
 }
+
+footer menu li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+footer menu a {
+    justify-content: center;
+}
+
+footer menu li a svg {
+    position: relative;
+    top: -15px;
+    right: 45px;
+}
