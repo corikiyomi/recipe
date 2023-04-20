@@ -183,7 +183,7 @@ aside > h2 {
     position: absolute;
     top: 2300px;
     display: block;
-    width: 414px;
+    width: 80%;
     text-align: center;
 }
 
@@ -208,7 +208,8 @@ aside h3, aside figcaption {
 /* NAVIGATION */
 
 nav.main-nav {
-    width: 414px;
+    /* width: 414px; */
+    width: 80%;
     height: 90px;
     justify-content: center;
     display: flex;
@@ -323,6 +324,29 @@ li.search-bar button svg {
     top: 3px;
 }
 
+/* REVIEWS */
+
+.icon-tabler-star {
+    position: relative;
+    top: 4px;
+}
+
+aside > figure:nth-child(2) .icon-tabler-star,
+aside > figure:nth-child(4) .icon-tabler-star,
+aside > figure:nth-child(5) .icon-tabler-star  {
+    fill: var(--orange);
+}
+
+aside > figure:nth-child(2) .icon-tabler-star:last-child,
+aside > figure:nth-child(4) .icon-tabler-star:last-child,
+aside > figure:nth-child(5) .icon-tabler-star:last-child {
+    fill: #fff;
+}
+
+aside > figure:nth-child(3) .icon-tabler-star {
+    fill: var(--orange);
+}
+
 
 /* FOOTER */
 
@@ -378,4 +402,19 @@ footer menu li a svg {
     position: relative;
     top: -15px;
     right: 45px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 414px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    body {
+        width: 80%;
+    }
 }
