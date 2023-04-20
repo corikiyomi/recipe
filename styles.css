@@ -33,9 +33,10 @@ h1, h2, h3, footer {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.hidden {
+.hidden { /* HIDDEN IN WIDE */
     visibility: hidden;
 }
+
 
 /* HEADER */
 
@@ -208,11 +209,15 @@ aside h3, aside figcaption {
 
 nav.main-nav {
     width: 414px;
+    height: 90px;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 0;
     background-color: var(--lightgray);
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    box-shadow: 0 3px 2px #a9a8a8;
 }
 
 nav.main-nav menu {
@@ -223,36 +228,99 @@ nav.main-nav menu {
     padding-left: 0;
     position: relative;
     top: 50px;
+    max-width: 414px;
 }
 
 nav.main-nav li {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     text-align: center;
 }
 
-menu.pop-out-menu {
-    position: absolute;
-    top: 30px;
-    display: block;
-    /* visibility: collapse; */
+.hamburger-menu {
+    position: relative;
+    left: 130px;
+    color: var(--blk);
+    font-size: 1.25em;
 }
 
-menu.pop-out-menu li {
+.home-menu {
+    position: relative;
+    bottom: 60px;
+    left: 150px;
+}
+
+.home-menu > svg:nth-child(2) {
+    width: 250px;
+    padding: 15px 0 22px 0;
+    background-color: var(--orange);
+}
+
+.sign-in a {
+    position: relative;
+    left: 130px;
+    font-size: 1.25em;
+    color: var(--blk);
+}
+
+.sign-in a svg {
+    width: 45px;
+    height: 40px;
+    margin-bottom: 2px;
+}
+
+
+ul.pop-out-menu {
+    display: block;
+}
+
+ul.pop-out-menu li {
     width: 150px;
     justify-content: center;
     display: block;
+    /* MOBILE MENU COLLAPSED */
+    position: absolute;
+    visibility: collapse;
 }
 
-menu.pop-out-menu li a {
+ul.pop-out-menu li a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 }
 
-menu.pop-out-menu img {
+ul.pop-out-menu img {
     width: 35px;
+}
+
+li.search-bar {
+    position: relative;
+    top: 40px;
+    right: 187px;
+    z-index: 0;
+    border: 2px solid var(--orange);
+}
+
+li.search-bar button {
+    background-color: var(--orange);
+    border: none;
+}
+
+li.search-bar button:hover {
+    cursor: pointer;
+}
+
+li.search-bar input[placeholder] {
+    padding-left: 10px;
+    width: 200px;
+    border: none;
+}
+
+li.search-bar button svg {
+    text-align: center;
+    position: relative;
+    top: 3px;
 }
 
 
