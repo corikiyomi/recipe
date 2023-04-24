@@ -360,7 +360,7 @@ aside > figure:nth-child(3) .icon-tabler-star {
 /* FOOTER */
 
 footer {
-    display:
+    display: block;
 }
 
 footer h2, footer h3 {
